@@ -8,6 +8,7 @@ groovy greeting.groovy
 
 ```cmd
 cd backend
+groovy main.groovy
 ```
 
 ```cmd

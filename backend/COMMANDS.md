@@ -1,7 +1,8 @@
 # Commands:
 
 ```cmd
-
+cd backend
+groovy hello.groovy
 ```
 
 ```cmd

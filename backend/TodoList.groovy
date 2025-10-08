@@ -26,4 +26,13 @@ class TodoList {
     def getPendingTasks() {
         tasks.findAll { !it.completed }
     }
+
+    def exportToJson() {
+        def json = new groovy.json.JsonBuilder(tasks)
+        json.toPrettyString()
+    }
+
+    def filterByDate(Date since) {
+        tasks.findAll { it.createdAt >= since }
+    }
 }

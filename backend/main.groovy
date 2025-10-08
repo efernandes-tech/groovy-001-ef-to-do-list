@@ -14,3 +14,10 @@ todo.completeTask(0)
 
 println "\nPending tasks: ${todo.pendingTasks.size()}"
 todo.showTasks()
+
+def json = todo.exportToJson()
+println "\nJSON Export:\n${json}"
+
+def today = new Date().clearTime()
+def todaysTasks = todo.filterByDate(today)
+println "\nToday's tasks: ${todaysTasks.size()}"
